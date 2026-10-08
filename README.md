@@ -109,16 +109,6 @@ toolbarMode = "minimal"
 
 ## 🔐 User accounts
 
-`app4.py` creates three demo accounts automatically every time it starts, so you can sign in straight away:
-
-| Role | Employee ID | Password |
-|---|---|---|
-| HR Admin | `E001` | `ChangeMe!1` |
-| Manager | `E002` | `ChangeMe!2` |
-| Employee | `E003` | `ChangeMe!3` |
-
-> ⚠️ **Change this before real use.** These three `create_employee(...)` lines (in the *AUTHENTICATION & DATABASE* section, just under `init_auth_db()`) use `INSERT OR REPLACE`, so they **reset those passwords on every run**. For a real deployment, replace the demo passwords with your own, then remove or comment out the lines once your real accounts exist.
-
 To add another account, call the helper once (for example from a Python shell, or temporarily in the script):
 
 ```python
